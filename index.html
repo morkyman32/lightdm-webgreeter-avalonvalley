@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="config.js" defer></script>
+    <script type="text/javascript" src="js/config_apply.js" defer></script>
+    <script type="text/javascript" src="js/mock.js"></script>
+    <script type="text/javascript" src="js/greeter.js" defer></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="index.js"></script>
+  </head>
+  <body onload="initialize()">
+
+    <div class="black-fade">
+
+    </div>
+    <div class="background-cont">
+        <img src="img/backgrounds/pale_blue_mountains.jpg">
+        <video autoplay muted loop src="img/backgrounds_video/ocean.webm"></video>
+        
+        <div class="bottom-gradient"></div>
+    </div>
+
+    <div class="message">
+         <img src="./img/icons/error.png">
+         <span>Incorrect password.</span>
+    </div>
+
+    <div class="widget-section">
+         <div class="widget widget-clock">
+            <div class="widget-clock-time">
+                <span class="time">00:00 AM</span><br>
+                <span class="day">Monday</span><br>
+                <span class="date">Jan 1, 1970</span>
+            </div>
+              <div class="widget-clock-face">
+                <img class="hour" src="img/clock/arrow-hour.png">
+                <img class="min" src="img/clock/arrow-min.png">
+                <img class="sec" src="img/clock/arrow-sec.png">
+                <img src="img/clock/face-bk.png" >
+              </div>
+              
+         </div>
+    </div>
+
+    <div class="bottom-branding">
+        <img src="styles/assets/brandings/avalonvalley/archlinux.png">
+    </div>
+
+    <div class="login-input">
+        <div class="login-input-pfp">
+            <img src="img/default_avatar.png">
+        </div>
+        <span class="input-username">mdpakk</span>
+        <div class="text-input-box">
+            <input type="password" id="password_entry" onkeypress="handle_inputkeypress(this,event)" name="fname">
+            <img class="icon-capslock" src="./img/icons/capslock.png">
+            <div class="login-input-enterbutton" onclick='handle_inputkeypress(document.querySelector("#password_entry"),{key: "Enter"})'>
+                <img src="img/arrow.png">
+            </div>
+        </div>
+        <div class="loading-icon-cont" style="height:0; position:relative;">
+            <img src="styles/assets/icons/loading_anims/avalonvalley.gif">
+        </div>
+        
+    </div>
+
+    <div class="user-list">
+
+        <div class="user-select-item" id="user_template">
+            <div class="user-select-item-pfp">
+                <img src="img/default_avatar.png">
+            </div>
+            <span class="user_name">mdpakk</span>
+        </div>
+
+    </div>
+
+    <div class="power-buttons">
+        <img onclick="system_suspend();" src="img/b-sleep.png">
+        <img onclick="system_reboot();" src="img/b-reboot.png">
+        <img onclick="system_shutdown();" src="img/b-shutdown.png">
+    </div>
+	
+  </body>
+</html>

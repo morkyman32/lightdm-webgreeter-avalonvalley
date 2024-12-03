@@ -1,0 +1,205 @@
+body {
+    font-family:"Noto Sans";
+}
+
+.bottom-gradient {
+    width:100%;
+    height:350px;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background:linear-gradient(transparent,rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.682))
+}
+
+.widget {
+    width:350px;
+    height:100px;
+    background: rgba(0, 0, 0, 0.671);
+    border: 2px solid #444444;
+    box-sizing: border-box;
+    border-radius: 0px;
+    overflow:hidden;
+    color:white;
+}
+
+.widget-clock-time {
+    margin:5px 5px 5px 10px;
+}
+
+.widget-clock-time .day {
+    margin-top:2px;
+    font-size:18px;
+}
+
+.widget-clock-time .date {
+    font-size:14px;
+}
+
+.userlist-item-selected {
+    background: rgba(0, 0, 0, 0.493);
+    border: 1px solid #4f4f4f;
+    opacity: 1;
+}
+
+.user-select-item:hover {
+    opacity:1;
+}
+
+.user-select-item-selected {
+    background:linear-gradient(#ffffff69 0%,#b9b9b94b 33%,#8484845b 34%,#76767654 69%,#f2f2f26e 100%);
+    border:1px solid #bdbdbd5d;
+    opacity:1 !important;
+}
+
+.user-select-item  {
+    border-radius:0px;
+    opacity:0.85;
+    transition:0.2s;
+}
+
+.user-select-item span {
+    font-size:14px;
+    color:white;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    margin-left:15px;
+}
+
+.user-select-item-pfp {
+    width:50px;
+    height:50px;
+    margin-top:5px;
+    margin-left:10px;
+
+    background: black;
+    border:2px solid rgb(92, 92, 92);
+    border-radius:0px;
+}
+
+.user-select-item-pfp img {
+    height:calc(100%);
+    width:calc(100%);
+}
+
+.bottom-branding {
+    height:40px;
+    margin-bottom:25px;
+}
+
+.input-username {
+    background: #0000009c;
+    padding: 2px 10px 5px 10px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #6b6b6b;
+}
+
+.login-input-pfp {
+    border:5px solid rgb(70, 70, 70);
+    border-radius:0px;
+}
+
+.login-input-pfp img {
+    height:calc(100%);
+    width:calc(100%);
+    border:1px solid #5d5d5d;
+}
+
+img[src="img/default_avatar.png"] {
+    content:url("./assets/flat/default_pfp.jpg");
+}
+
+img[src="img/archlogo.png"] {
+    content:url("./assets/brandings/archlogo_flat.png");
+}
+
+img[src="img/clock/face-bk.png"] {
+    content:url("./assets/clocks/flat/face-bk.png");
+}
+
+img[src="img/clock/arrow-hour.png"] {
+    content:url("./assets/clocks/flat/arrow-hour.png");
+}
+
+img[src="img/clock/arrow-min.png"] {
+    content:url("./assets/clocks/flat/arrow-min.png");
+}
+
+img[src="img/clock/arrow-sec.png"] {
+    content:url("./assets/clocks/flat/arrow-sec.png");
+}
+
+img[src="img/b-shutdown.png"] {
+    content:url("./assets/pbuttons/b-shutdown.png");
+}
+
+img[src="img/b-reboot.png"] {
+    content:url("./assets/pbuttons/b-reboot.png");
+}
+
+img[src="img/b-sleep.png"] {
+    content:url("./assets/pbuttons/b-sleep.png");
+}
+
+.login-input span {
+    font-size:20px;
+    margin-top:30px;
+    margin-bottom:15px;
+    color:white;
+}
+
+.login-input .text-input-box {
+    border-radius:3px;
+    border:1px solid rgba(128, 128, 128, 0.671);
+    background: #00000078;
+}
+
+.login-input .text-input-box input {
+    background-color:transparent;
+    border:none;
+    color:white;
+    font-size:17px;
+    letter-spacing:1.5px;
+}
+
+.login-input .text-input-box input:focus {
+    outline: none;
+    border: none;
+}
+
+.login-input-enterbutton {
+    background:#00000078;
+    border:1px solid rgb(128, 128, 128);
+    border-radius:0px;
+    opacity:0.78;
+    transition: 0.2s;
+}
+
+.login-input-enterbutton:hover {
+    opacity:1;
+}
+
+.login-input-enterbutton img {
+    height:90%;
+}
+
+.loading-icon-cont img {
+    transition: opacity 0.3s, transform 0.3s;
+    transform:scale(0.55);
+}
+
+.message {
+    border: 2px solid #444444;
+    background: rgba(0, 0, 0, 0.671);
+    color:white;
+    transition:top 0.45s ease, opacity 0.45s ease;
+}
+
+img[src="./img/icons/error.png"] {
+    content:url("./assets/icons/flat/message_error.png");
+}
+
+img[src="./img/icons/capslock.png"] {
+    content:url("./assets/icons/flat/capslock.png");
+}

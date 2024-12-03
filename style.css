@@ -1,0 +1,274 @@
+* {
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    -webkit-user-drag: none !important;
+    -khtml-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+body {
+    width:100%;
+    height:100vh;
+    margin:0;
+    overflow:hidden;
+    background:black;
+    transition: transform 0.6s ease;
+}
+
+.black-fade {
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index:255;
+    background:black;
+    transition: opacity 0.4s;
+    user-select:none; 
+    pointer-events: none;
+}
+
+.background-cont {
+    transform: scale(1.1);
+    transition: transform 0.9s ease, opacity 0.5s ease;
+}
+
+.background-cont img, .background-cont video {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.background-cont {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100%;
+    position: absolute;
+    z-index:-1;
+    opacity:0;
+}
+
+.widget-section {
+    position:absolute;
+    top:25px;
+    right:25px;
+    z-index:5;
+}
+
+.widget-clock img {
+    height:100%;
+    width:100%;
+}
+
+.widget-clock-face {
+    height:85px;
+    width:85px;
+    float:right;
+    margin: 5px 10px 5px 5px;
+    position:relative;
+}
+
+.widget-clock-face img {
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.widget-clock-face .hour {
+    z-index:10;
+}
+
+.widget-clock-face .min {
+    z-index:10;
+}
+
+.widget-clock-face .sec {
+    z-index:10;
+}
+
+.widget-clock-time {
+    display:inline-block;
+    float:left;
+}
+
+.widget-clock-time .time {
+    font-size:28px;
+    font-weight: bold;
+}
+
+.widget-clock-time .day {
+    display:inline-block;   
+}
+
+span,img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+
+.user-list {
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-left:30px;
+    margin-bottom:15px;
+}
+
+.user-select-item {
+    width:210px;
+    height:60px;
+    position:relative;
+    margin-bottom:15px;
+    cursor:pointer;
+    box-sizing: border-box;
+}
+
+.userlist-item-selected {
+    box-sizing: border-box;
+}
+
+.user-select-item-selected {
+    box-sizing: border-box;
+    cursor:default;
+}
+
+.user-select-item-pfp {
+    display:inline-block;
+    box-sizing: border-box;
+}
+
+.user-select-item-pfp img {
+    box-sizing: border-box;
+}
+
+.bottom-branding {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:0;
+}
+
+.bottom-branding img {
+    height:100%;
+}
+
+.login-input {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:300px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-input-pfp {
+    width:160px;
+    height:160px;
+    box-sizing: border-box;
+}
+
+.login-input-pfp img {
+    box-sizing:border-box;
+}
+
+.login-input span {
+    display:inline-block;
+}
+
+.login-input .text-input-box {
+    height:22px;
+    width:100%;
+}
+
+.login-input .text-input-box input {
+    margin:0;
+    width:calc(100% - 70px);
+    margin-left:4px;
+    float:left;
+}
+
+.icon-capslock {
+    height:100%;
+    width:16px;
+    object-fit:scale-down;
+    float:left;
+    margin-right:4px;
+    opacity:0;
+    transition:opacity 0.25s;
+}
+
+.login-input-enterbutton {
+    width:38px;
+    height:calc(100% - 4px);
+    margin:2px;
+    box-sizing: border-box;
+    float:left;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+
+.loading-icon-cont {
+    height:0px;
+}
+
+.loading-icon-cont img {
+    height:60px;
+    width: 60px;
+    margin-top:30px;
+    opacity:0;
+}
+
+.power-buttons {
+    position:absolute;
+    right:40px;
+    bottom:40px;
+}
+
+.power-buttons img {
+    height:30px;
+    float:left;
+    margin-right:15px;
+    opacity:0.75;
+    transition: .2s;
+    cursor:pointer;
+}
+
+.power-buttons img:hover {
+    opacity:1;
+}
+
+#user_template {
+    display:none;
+}
+
+.message {
+    z-index:100;
+    position:absolute;
+    left:50%;
+    top:-60px;
+    opacity:0;
+    transform:translateX(-50%);
+    min-width:200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+}
+
+.message span {
+    display:inline-block;
+    padding:10px;
+}
+
+.message img {
+    height: 40px;
+    margin: 8px;
+}
