@@ -5,6 +5,7 @@ This login theme was inspired by MondySpartan's Avalon Valley concept: https://x
 * config.js - Configuration file
 
 # Installation (Arch Linux)
+NOTE: It was a bit of a while ago since I tested it on a freshly installed machine, but the instructions below should still work.
 * Install `lightdm` from the official Arch repos
 * Install `web-greeter` from AUR by running `yay -S web-greeter`
 * Set LightDM as your default display manager and set `web-greeter` as your default greeter
